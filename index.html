@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sonu Meena | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Elegant serif font -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <nav>
+      <h1 class="logo">Sonu Meena</h1>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+  <div class="hero-text">
+    <h2 class="intro-heading">
+   <span>Hello, I'm Sonu Meena</span>
+</h2>
+ <br/>  
+<p class="tagline">Open To Opportunities | Tech Enthusiast | Entry Level Web Developer</p>
+</div>
+</section>
+
+
+<!-- ===== ABOUT SECTION ===== -->
+<section class="section" id="about">
+  <div class="about-container">
+    <h2 class="about-kajal">About Me</h2>
+    <p>
+       I am currently pursuing a Bachelor's degree in Computer Application
+ from Monark University. I am eager to begin my career in the
+ technology industry. Skilled in Python web development with hands
+on experience in the Django framework. Looking for a role to apply
+ problem-solving skills and creative solutions.My goal is to deliver high-quality solutions while continuously improving my skills.
+    </p>
+  </div>
+</section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section bg-light" id="education">
+    <h2 class="section-heading"><span>Education</span></h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3><u>Graduation</u></h3>
+        <h3>Bachelor of Computer Applications</h3>
+        <span class="sub-info">2022 - 2025</span>
+  <p class="sub-info">MONARK UNIVERSITY</p>
+  <p class="sub-info"><strong>CGPA:</strong> 7.43</p>
+      </div>
+      <div class="timeline-item">
+        <h3><u>HSC</u></h3>
+        <span class="sub-info">2021 - 2022</span>
+        <p class="sub-info">VIVEKANAND SENIOR SCHOOL</p>
+<p class="sub-info"><strong>Percentage:</strong>  70.80%</p>
+      </div>
+      <div class="timeline-item">
+        <h3><u>SSC</u></h3>
+        <span class="sub-info"> 2019 - 2020</span>
+        <p class="sub-info">VIVEKANAND SENIOR SCHOOL</p>
+<p class="sub-info"><strong>Percentage:</strong> 58% </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INTERNSHIP SECTION ===== -->
+  <section class="section" id="internship">
+    <h2 class="section-heading"><span>Internship</span></h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <h3>Python Developer Intern</h3>
+        <span class="sub-info">JUNE 2024 - APR 2025</span>
+        <p>Completed a Python Developer Internship focused on Django framework for scalable web applications.
+          Designed and developed “MULTISHOP” e-commerce platform with product browsing, cart, authentication, and order management.
+          Gained hands-on experience with <b>Python, Django, HTML, CSS, Bootstrap 5, and PostgreSQL.</b>
+      </p>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section bg-light">
+    <h2 class="section-heading"><span>Projects</span></h2>
+
+      <div class="timeline">
+      <div class="timeline-item">
+      
+        <h3>MultiShop | Python with Django</h3>
+        <p>Developed an e-Commerce web application during internship at Patel Web Solution.
+          Implemented key features including product browsing, cart system, user login, and order management.
+          Designed a responsive UI with HTML, CSS, Bootstrap 5, and built a scalable back-end using Python, Django, and PostgreSQL for secure data handling.
+        </p>
+      </div>
+      
+      
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section">
+    <h2 class="section-heading"><span>Skills</span></h2>
+    <ul class="skills-list">
+      <li>Fronted: HTML,CSS</li>
+      <li>C and C++</li>
+      <li>JAVA</li>
+      <li>PYTHON</li>
+      <li>FRAMEWORK: DJANGO</li>
+      <li>DATABSE: SQL,POSTGRESQL</li>
+    </ul>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section bg-light">
+  <h2 class="section-heading"><span>Contact Me</span></h2>
+  <div class="projects">
+     <!-- reuse flex container like projects -->
+    <div class="card contact-card"> <!-- card style -->
+      <h3>Stay in Touch!</h3>
+      <p>I'm always excited to meet new people and explore opportunities!</p>
+      <p>Email: <a href="mailto:sonumeena87419@gmail.com">sonumeena87419@gmail.com</a></p>
+      <p>LinkedIn: 
+        <a href="https://www.linkedin.com/public-profile/settings" target="_blank">Visit my LinkedIn</a>
+      </p>
+      <p>You are welcome to freely download my resume for reference:
+      <a href="C:\Users\sonu meena\Desktop\PORTFOLIO_SONU\Resume_Sonu.pdf" download >Download My Resume</a>
+      </p>
+    </div>
+  </div>
+</section>
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Sonu Meena | Web Developer Portfolio. Showcasing projects, skills</p>
+  </footer>
+  <script>
+  // Select all sections and nav links
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop - 70; // 70px for navbar height
+      const sectionHeight = section.clientHeight;
+      if (scrollY >= sectionTop && scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
